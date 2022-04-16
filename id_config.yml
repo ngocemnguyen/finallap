@@ -14,6 +14,16 @@
         ipv4:
         - address: 192.168.12.1/24
          
+tasks:
+    - name: make interfaces up
+      ios_l3_interfaces:
+        config:
+        - name: ethernet0/1 
+          enabled: true
+        config:
+        - name: ethernet0/2 
+          enabled: true
+
 - name: Ip config
   hosts: R2
   gather_facts: no
@@ -28,3 +38,13 @@
       - name: ethernet e0/2
         ipv4:
         - address: 192.168.12.2/24
+
+tasks:
+    - name: make interfaces up
+      ios_l3_interfaces:
+        config:
+        - name: ethernet0/1 
+          enabled: true
+        config:
+        - name: ethernet0/2 
+          enabled: true
