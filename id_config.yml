@@ -19,10 +19,10 @@
     ios_l3_interfaces:
       config:
       - name: ethernet0/1 
-          enabled: true
+        enabled: true
       config:
       - name: ethernet0/2 
-          enabled: true
+        enabled: true
 
 - name: Ip config
   hosts: R2
@@ -44,7 +44,7 @@
     ios_l3_interfaces:
       config:
       - name: ethernet0/1 
-          enabled: true
+        enabled: true
       config:
       - name: ethernet0/2 
-          enabled: true
+        enabled: true
