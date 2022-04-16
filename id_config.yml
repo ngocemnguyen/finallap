@@ -14,7 +14,7 @@
         ipv4:
         - address: 192.168.12.1/24
          
-tasks:
+ tasks:
     - name: make interfaces up
       ios_l3_interfaces:
         config:
@@ -39,7 +39,7 @@ tasks:
         ipv4:
         - address: 192.168.12.2/24
 
-tasks:
+ tasks:
     - name: make interfaces up
       ios_l3_interfaces:
         config:
